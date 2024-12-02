@@ -29,8 +29,6 @@ I probably will only try a small handful of these, but it's nice to have some op
 
 Okay, I'll be back December 1. Let's see if I stick with this color palette!
 
-<div id="current"></div>
-
 ## Nov 29
 
 I started early.
@@ -42,5 +40,25 @@ Next I researched the [Picotron fantasy workstation](https://www.lexaloffle.com/
 Next, I worked on a web project. Some colleagues are in an exhibit opening in a month in LA and need a timebased 24-hour work to display in a website, updating once a second, as part of a show. Consider it something like a 24-hour long video with a framerate of 1 frame per second. They asked if I could make it happen. I developed a simple system and implemented a test, building out a simple site for them to check speed, image resolution, and for us to do some testing for robustness. Took me an hour or so for the initial test from idea to coding to deployment. Sent it along for their feedback. I should ask them for some money. I'll track my time. :)
 
 By the way, this mini blog is being implemented in pandoc with front matter holding the title and css filename, and then just using a simple incantation in the terminal to render md to html.
+
+<div id="current"></div>
+
+## Dec 1
+
+Okay, first official day of December Adventure. It's Sunday, and I spent much of the day staying warm, visiting Swiss Institute to see their current shows, and the tea shop and Ukrainian Village.
+
+In the evening I decided to spend some time evaluating static site generators and to build one up because I've been unhappy with jekyll. For a decade I've mostly used jekyll, which has built-in support for GitHub pages. This means it's easy to host websites on GitHub written in Jekyll. But every few months when I try to make a post on one of my sites (class sites or project sites) I run into a problem and the site won't build due to dependency hell from some combo of Ruby, gems, or bundler dependencies. I don't want to use any of these. I've put checking out hugo on the back burner for a while, so now felt like a good time to spend a little time with it. 
+
+I tried it in 2017, wasn't immediately noticing it to be much superior to jekyll, and haven't tried it out since but every time I complain about jekyll someone recommends hugo. So I checked it out! Unfortunately, to make a new site I have to invest time to figuring out directory structure, configuring templating and themes. And like Jekyll, it has many variables, and such to learn and implement. I know it's probably faster than building my own site from scratch but I got turned off. I didn't want to learn the hugo way. 
+
+So next I fired Eleventy/11ty static site builder, and I check out the starter example on glitch.com. Based on this starter, the structure is pretty clear. The default nunjucks templating can be switched out for liquid templating, which might make it easier to switch. I do have to say I'm not thrilled about npm/node.js here as I fear there could be the typcial npm ecosystem of pulling in a million dependencies, and again dependency / version hell, though npx is to try to prevent this I guess. But based on being a retrogrouch I next pulled up bashblog, a ssg written in pure Bash. It's fine, though it spends a lot of lines adding in google analytics, disqus and twitter stuff, among other things I do not need or want. I also find the code hard to read since it's bash. And the default theme is ugly, and the project creator abandoned it, so maybe it wasn't great? 
+
+To make a long story longer after all that I returned to my own custom bash and pandoc-based static site generator, panblog, which I started years ago. I had extracted minimal parts for powering this mini december-adventure site for example, so this was the kick in the pants to complete it, completing a build script, adding in theming, permalinks, index page builder, and auto-adding headers/footers, and rss feed generation. These are all things I already can do, so just need to automate it intelligently. 
+
+So I picked up where I had left off working last time I touched the repo. Thankfully, I'm pretty good with documentation and left lots of notes. I decided to make some assumptions, but allow things to be easily changed. There is a config.conf file that holds the sub-directories for: themes, which are just css files; posts, which are markdown files with YYYY-MM-DD-name.md naming scheme; assets, the image assets source directory; templates, a folder holding html templates for pandoc to convert md to html for different kinds of pages; and some variables for holding the site name and url, for example. 
+
+My build script creates a site folder if needed. It loops through the posts folder of markdown files, extracting the name and the date separately, via hacky regexes that took me a while to get right. My build script adds the post name and a link to the post page, inside its own directory, to the index page. It then adds the extracted date. It does this in reverse order so the most recent blog posts are at the top of the index. It uses pandoc to convert each post and the index page from markdown to html. I also set up a separate assets folder to hold images. Next steps are to add back in page conversion for non-blog pages, and then to test and automate the rss feed generator. Then to make sure I have some couple good basic and different classless themes. If all goes well, I think this could become my new static site generator for my uni classes, and maybe for my sites in general, and then maybe a good tool for other folks to use as well. It threads the needle between basic markdown to html conversion with straight pandoc on the one end and an overly complex ssg like hugo on the other. I think it's well on the way.
+
+![panblog test](assets/img/panblog-test.jpg)
 
 [↑top](#)
