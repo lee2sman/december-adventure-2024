@@ -41,8 +41,6 @@ Next, I worked on a web project. Some colleagues are in an exhibit opening in a 
 
 By the way, this mini blog is being implemented in pandoc with front matter holding the title and css filename, and then just using a simple incantation in the terminal to render md to html.
 
-<div id="current"></div>
-
 ## Dec 1
 
 Okay, first official day of December Adventure. It's Sunday, and I spent much of the day staying warm, visiting Swiss Institute to see their current shows, and the tea shop and Ukrainian Village.
@@ -60,5 +58,11 @@ So I picked up where I had left off working last time I touched the repo. Thankf
 My build script creates a site folder if needed. It loops through the posts folder of markdown files, extracting the name and the date separately, via hacky regexes that took me a while to get right. My build script adds the post name and a link to the post page, inside its own directory, to the index page. It then adds the extracted date. It does this in reverse order so the most recent blog posts are at the top of the index. It uses pandoc to convert each post and the index page from markdown to html. I also set up a separate assets folder to hold images. Next steps are to add back in page conversion for non-blog pages, and then to test and automate the rss feed generator. Then to make sure I have some couple good basic and different classless themes. If all goes well, I think this could become my new static site generator for my uni classes, and maybe for my sites in general, and then maybe a good tool for other folks to use as well. It threads the needle between basic markdown to html conversion with straight pandoc on the one end and an overly complex ssg like hugo on the other. I think it's well on the way.
 
 ![panblog test](assets/img/panblog-test.jpg)
+
+<div id="current"></div>
+
+## Dec 2
+
+Added a lot to my [panblog](https://tildegit.org/exquisitecorp/panblog) static site generator including a comprehensive build script, configs error checking, page rendering system, and documentation. I did a variety of tests and found a few bugs I still have to crack but am in overall good shape. 
 
 [↑top](#)
