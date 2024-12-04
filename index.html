@@ -179,9 +179,6 @@ the way.</p>
 <img src="assets/img/panblog-test.jpg" alt="panblog test" />
 <figcaption aria-hidden="true">panblog test</figcaption>
 </figure>
-<div id="current">
-
-</div>
 <h2 id="dec-2">Dec 2</h2>
 <p>Added a lot to my <a
 href="https://tildegit.org/exquisitecorp/panblog">panblog</a> static
@@ -189,6 +186,44 @@ site generator including a comprehensive build script, configs error
 checking, page rendering system, and documentation. I did a variety of
 tests and found a few bugs I still have to crack but am in overall good
 shape.</p>
+<div id="current">
+
+</div>
+<h2 id="dec-3">Dec 3</h2>
+<p>Much of the day has been consumed by me sitting on a couch with a
+laptop open and trying to crank out a professional document I have
+agreed to write, outside of my job but in keeping with the expectations
+of academia, to support faculty at another institution. It is not due
+until next Monday but the institution keeps asking me for it, so I’m
+trying to knock it out. Unfortunately it’s been to the detriment to
+finishing up squashing bug on panblog.</p>
+<p>Anyway…I did get some time to work on it. So far I removed some old
+build scripts, tested my non-post page generation a bit, then added in
+some build automation to include opengraph (og:meta) tags, though ran
+into some issues when trying to populate the opengraph tags.</p>
+<p>Next I spent some time researching both metadata and front matter <a
+href="https://pandoc.org/chunkedhtml-demo/6.2-variables.html">variables</a>
+in pandoc, with the goal to automate pulling a og:image url from
+frontmatter . I think I found a solution through the
+<code>--metadata KEY[=VAL]</code> option or the front matter, and
+finally found a <a href="https://stackoverflow.com/a/26490978">good
+explanation on stackoverflow</a>, that I think will be useful and I plan
+to use that to try to knock out remaining needs for populating
+variables. I also see useful info in the extensive man page
+<code>man pandoc</code> in the TEMPLATES section and then in
+Conditionals, which I think will be useful for testing if an image is
+set and then assigning the og:image metadata if it is.</p>
+<p>Lastly for panblog, I began to rework gmi.css to an alternate “good
+defaults” new theme to ship with panblog. First, I checked out <a
+href="https://lospec.com/palette-list">2-color palletes</a> from the
+Lospec website, and began trying some options, building out a new
+starter theme fresh.css.</p>
+<p>Also, separately, I squashed a bug on <a
+href="https://leetusman.com/archiving-artist-spaces/">Archiving
+Artist-Run Spaces</a> and added a redirect to my main/portfolio website
+in the /projects sub-directory in case anyone tries to manually go there
+directly (instead of to a project directly) so they are re-routed to
+root, which is the actual portfolio landing page, instead of a 404.</p>
 <p><a href="#">↑top</a></p>
 </body>
 </html>

@@ -59,10 +59,22 @@ My build script creates a site folder if needed. It loops through the posts fold
 
 ![panblog test](assets/img/panblog-test.jpg)
 
-<div id="current"></div>
-
 ## Dec 2
 
 Added a lot to my [panblog](https://tildegit.org/exquisitecorp/panblog) static site generator including a comprehensive build script, configs error checking, page rendering system, and documentation. I did a variety of tests and found a few bugs I still have to crack but am in overall good shape. 
+
+<div id="current"></div>
+
+## Dec 3
+
+Much of the day has been consumed by me sitting on a couch with a laptop open and trying to crank out a professional document I have agreed to write, outside of my job but in keeping with the expectations of academia, to support faculty at another institution. It is not due until next Monday but the institution keeps asking me for it, so I'm trying to knock it out. Unfortunately it's been to the detriment to finishing up squashing bug on panblog. 
+
+Anyway...I did get some time to work on it. So far I removed some old build scripts, tested my non-post page generation a bit, then added in some build automation to include opengraph (og:meta) tags, though ran into some issues when trying to populate the opengraph tags. 
+
+Next I spent some time researching both metadata and front matter [variables](https://pandoc.org/chunkedhtml-demo/6.2-variables.html) in pandoc, with the goal to automate pulling a og:image url from frontmatter . I think I found a solution through the `--metadata KEY[=VAL]` option or the front matter, and finally found a [good explanation on stackoverflow](https://stackoverflow.com/a/26490978), that I think will be useful and I plan to use that to try to knock out remaining needs for populating variables. I also see useful info in the extensive man page `man pandoc` in the TEMPLATES section and then in Conditionals, which I think will be useful for testing if an image is set and then assigning the og:image metadata if it is.
+
+Lastly for panblog, I began to rework gmi.css to an alternate "good defaults" new theme to ship with panblog. First, I checked out [2-color palletes](https://lospec.com/palette-list) from the Lospec website, and began trying some options, building out a new starter theme fresh.css.
+
+Also, separately, I squashed a bug on [Archiving Artist-Run Spaces](https://leetusman.com/archiving-artist-spaces/) and added a redirect to my main/portfolio website in the /projects sub-directory in case anyone tries to manually go there directly (instead of to a project directly) so they are re-routed to root, which is the actual portfolio landing page, instead of a 404.
 
 [↑top](#)
