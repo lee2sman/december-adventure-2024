@@ -332,9 +332,6 @@ turned in solo games for the Pico-8 assignment.</p>
 train and at home polishing up my letter of recommendation for a
 colleague and submitted it. I have to do 3 more (but easier) ones
 tomorrow!</p>
-<div id="current">
-
-</div>
 <h2 id="dec-6">Dec 6</h2>
 <p>I think I got 90% of the MVP for panblog static site generator done.
 It’s working well now, and I think the main thing left is to add correct
@@ -361,6 +358,40 @@ page template page as well from my website portfolio. Feels good getting
 to this point, and it uses knowledge I gained from my December Adventure
 time last year, then building the Archiving Artist-Run Sites project
 site and my website this summer.</p>
+<div id="current">
+
+</div>
+<h2 id="dec-7">Dec 7</h2>
+<p>After a fun day out at the orchestra, then to see some sound art,
+then to dinner in Chinatown I came home. My partner wanted to see a
+movie I wasn’t keen on so I put a few hours into Pandoc. It feels pretty
+close to completion for an alpha release. First, I fixed a number of
+bugs. Now, frontmatter is entirely optional. By default, the filename
+(e.g. <em>YYYY-MM-DD-a-title.md</em>) will be tokenized into a title and
+date, and all posts use the default site theme css file specified in the
+config.conf file. Optionally, other things can be set in the
+front-matter including: post title, theme to override the site default
+theme, an opengraph image url, and an opengraph description. Later, I
+may also add categories too and make an optional category page. I don’t
+think it would be very difficult but I don’t know if I need it, so maybe
+won’t worry about that for my alpha release. Annoyingly, I spent over an
+hour or two trying to implement frontmatter custom variables with lua
+filters, bash, and then finally realized they’re already implemented!
+It’s just not well-documented in pandoc docs and I figured it out by
+perusing Pandoc’s Issues on GitHub that they are already implemented and
+I just needed to use special syntax within my custom templates. I’ve
+updated my TODOs and see that the main thing left is testing: check that
+the RSS generator is generating a good RSS page; check that the rendered
+websites all work (need to try with other test sites). There may be a
+need to minorly debug the images asset folder if switching from
+title/index.html permalink to title.html. Speaking of which, uh oh,
+should I actually place all posts into an output posts folder? Otherwise
+they’ll clog the output rendered site root directory. This would move
+them to _site_folder/posts/post_name/index.html for each. Well, I’ll
+have to run some tests and see. Basically, I’ll try to do a few tests on
+my own of these issues, make some sites, then announce and see if
+friends will test as well. I’m feeling good about where I’m at on this.
+It’s at 99% of what I currently use Jekyll for.</p>
 <p><a href="#">↑top</a></p>
 </body>
 </html>
