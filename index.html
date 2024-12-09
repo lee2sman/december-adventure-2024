@@ -21,6 +21,70 @@
       vertical-align: middle;
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="assets/css/main.css" />
 </head>
@@ -358,9 +422,6 @@ page template page as well from my website portfolio. Feels good getting
 to this point, and it uses knowledge I gained from my December Adventure
 time last year, then building the Archiving Artist-Run Sites project
 site and my website this summer.</p>
-<div id="current">
-
-</div>
 <h2 id="dec-7">Dec 7</h2>
 <p>After a fun day out at the orchestra, then to see some sound art,
 then to dinner in Chinatown I came home. My partner wanted to see a
@@ -392,6 +453,107 @@ have to run some tests and see. Basically, I’ll try to do a few tests on
 my own of these issues, make some sites, then announce and see if
 friends will test as well. I’m feeling good about where I’m at on this.
 It’s at 99% of what I currently use Jekyll for.</p>
+<div id="current">
+
+</div>
+<h2 id="dec-8">Dec 8</h2>
+<p>As I woke up this morning I dawdled in bed and read other folks’ logs
+of December Adventure. From there I sailed from link to link and
+eventually landed on the blog of someone writing about Hugo, and then
+linking to its <a
+href="https://gohugo.io/getting-started/quick-start/">quickstart</a>.
+Let me apologize to Hugo that I now see the Quickstart is mostly
+straightforward and if I had seen it the first time without the ananke
+theme added I might have made a different choice just to go with it. For
+example, <a href="https://themes.gohugo.io/themes/smol/">smol</a> theme
+seems to have 90% of what I’m looking for and no CSS pre-processor. It
+includes header/footer template code, though I’m not sure what calls it.
+And it’s missing RSS, which I’m guessing is a tutorial somewhere else.
+So overall, a tutorial for Hugo quickstart but using smol theme and RSS,
+and some explanation or simplification of the header/footer would get to
+about where I’m at. It also has tags. I am far enough along that I’m not
+going to turn back now, because mine feels fairly feature-complete and
+mine is 200 lines and hugo, who knows, but probably in the tens of
+thousands of lines and a dozen or two build files. In any case, the
+advantages of Hugo within my own areas of focus: the option of mega more
+add-on features from external add-ons (though this is where things tend
+to get complicated, in my experience); an executable hugo file rather
+than pandoc being update via package management for example; image
+processing (to webp) in the extended edition, whatever edition means,
+though I could add imagemagick for processing easily. Okay, last I’ll
+mention of hugo for now.</p>
+<p>Next I worked on my RSS feed generator. By the way, I’ll bookmark
+this helpful stackoverflow answer on <a
+href="https://stackoverflow.com/questions/26395374/what-can-i-control-with-yaml-header-options-in-pandoc">yaml
+metadata in pandoc</a> as its key to how I’m doing templating variables
+in panblog. When I need to grab a variable outside of a template I am
+using grep, like this:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># check if file has optional title in frontmatter</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="va">post_name</span><span class="op">=</span><span class="va">$(</span><span class="fu">grep</span> <span class="at">-oP</span> <span class="st">&#39;(?&lt;=title: ).*&#39;</span> <span class="va">$file)</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="bu">[</span> <span class="ot">-z</span> <span class="st">&quot;</span><span class="va">$post_name</span><span class="st">&quot;</span> <span class="bu">]</span><span class="kw">;</span> <span class="cf">then</span> <span class="co">#no title given, strip from filename</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="va">post_name</span><span class="op">=</span><span class="st">&quot;</span><span class="va">${file_name</span><span class="op">//</span><span class="ss">-</span><span class="op">/</span> <span class="va">}</span><span class="st">&quot;</span> <span class="co">#replace hyphen with space in name</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="cf">fi</span></span></code></pre></div>
+<p>Next I ran tests on my RSS generator and though it validated through
+the w3 validator I thought I’d tweak it a bit. I pull in the title name
+or generate from filename, using code similar to the above codeblock.
+Then I added in guid for each post for best practices, but it’s the same
+as a post url. I examined my generated rss file and it looked good. Then
+I ran it through the w3 validator again. All appears good.</p>
+<figure>
+<img src="assets/img/valid-rss.png"
+title="Official RSS feed validator certificate"
+alt="RSS feed validator" />
+<figcaption aria-hidden="true">RSS feed validator</figcaption>
+</figure>
+<p>Then I took a good long break and biked to Pioneerworks for the Press
+Play fair. Easily a couple thousand people there. I bought a sticker and
+some zines and mixtapes, and ran into a ton of friends. I saw Sam and
+Tega’s open studio and caught up with them on Solar Protocol and their
+current projects. At night I came back and decided to fire up panblog to
+build a site. I started by copying my previous coures website for
+Creating User Interfaces, which I last taught 2 years ago and have to
+teach this coming spring. It was easy to get the site up. I added in
+empty directories that panblog requires (posts, themes, templates; then
+copied over the build script, templates, config.conf. I edited
+config.conf with my site URL, title and theme. I moved images over to
+the images directory. I edited the header and footer template lightly,
+changing out a line. Then I played around with CSS, and then…moment of
+truth…fired the build script. Lovely! It works the first time! I noticed
+a minor bug, that the header wasn’t included on the post_template and I
+fixed that on panblog too. I decided I wanted the posts on this site to
+render from oldest on top to newest at the bottom, so I tried
+uncommenting that option on the build script and commenting out the
+other way. It worked like a charm.</p>
+<p>Then I played around with the CSS, running build each time I made a
+change, and it worked fast and easily. I’m pretty happy with how
+everything turned out. See below pictures of the render site. Note: I
+added a drafts directory and moved all of the posts except for week1
+into that. The drafts folder has no bearing on the rendering, so it’s a
+fine way to hide stuff for later. Idea borrowed from other static
+generators. I’m not implementing something like “–build-drafts” or
+whatever. I never use that since it’s easier to just check into posts
+folder when it’s ready to test and build.</p>
+<figure>
+<img src="assets/img/cui-site.jpg"
+title="Creating User Interfaces Class Website test, with image of soviet interfaces"
+alt="Creating User Interfaces class website test" />
+<figcaption aria-hidden="true">Creating User Interfaces class website
+test</figcaption>
+</figure>
+<figure>
+<img src="assets/img/interfaces.jpg"
+title="Class Website with text and image of Soviet census computer"
+alt="Interfaces page - week 1 of class site" />
+<figcaption aria-hidden="true">Interfaces page - week 1 of class
+site</figcaption>
+</figure>
+<p>I’m feeling pretty great about this. I’ll come back and do another
+site test for something different later, then announce and get friends
+to try it out, and then sread the word. It’s great I’ve built this tool,
+something I’ve felt I’ve needed for years. Goodbye Jekyll! (Well, except
+for the two big projects I’ve built that rely on it and I’m not sure I
+want to switch them now because they rely on Liquid Templating. But one
+day, if I have to!)</p>
 <p><a href="#">↑top</a></p>
 </body>
 </html>
