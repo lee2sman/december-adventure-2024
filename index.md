@@ -131,6 +131,6 @@ Then I played around with the CSS, running build each time I made a change, and 
 
 ![Interfaces page - week 1 of class site](assets/img/interfaces.jpg "Class Website with text and image of Soviet census computer")
 
-I'm feeling pretty great about this. I'll come back and do another site test for something different later, then announce and get friends to try it out, and then sread the word. It's great I've built this tool, something I've felt I've needed for years. Goodbye Jekyll! (Well, except for the two big projects I've built that rely on it and I'm not sure I want to switch them now because they rely on Liquid Templating. But one day, if I have to!)
+I'm feeling pretty great about this. I'll come back and do another site test for something different later, then announce and get friends to try it out, and then spread the word. It's great I've built this tool, something I've felt I've needed for years. Goodbye Jekyll! (Well, except for the two big projects I've built that rely on it and I'm not sure I want to switch them now because they rely on Liquid Templating. But one day, if I have to!)
 
 [↑top](#)
