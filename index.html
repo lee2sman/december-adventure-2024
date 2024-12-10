@@ -453,9 +453,6 @@ have to run some tests and see. Basically, I’ll try to do a few tests on
 my own of these issues, make some sites, then announce and see if
 friends will test as well. I’m feeling good about where I’m at on this.
 It’s at 99% of what I currently use Jekyll for.</p>
-<div id="current">
-
-</div>
 <h2 id="dec-8">Dec 8</h2>
 <p>As I woke up this morning I dawdled in bed and read other folks’ logs
 of December Adventure. From there I sailed from link to link and
@@ -555,6 +552,46 @@ tool, something I’ve felt I’ve needed for years. Goodbye Jekyll! (Well,
 except for the two big projects I’ve built that rely on it and I’m not
 sure I want to switch them now because they rely on Liquid Templating.
 But one day, if I have to!)</p>
+<div id="current">
+
+</div>
+<h2 id="dec-9">Dec 9</h2>
+<p>Today I prepped and pushed a v0.1alpha release of panblog. As it’s
+pretty late at night, I’ll try to announce to friends starting tomorrow
+and see if they want to try it out. I’ve also published a <a
+href="https://exquisitecorp.tildepages.org/panblog-demo/">demo site</a>,
+built using the the panblog repo “out of the box”. In prep for that I
+pushed some fixes to build.sh, cleaned up the css template, and updated
+the demo posts with some additional text. Then I spent a little time
+reading up on hosting via <a
+href="https://tilde.wiki/Tildepages">tildepages</a>. It was pretty easy,
+but I did post the site to a separate repo to keep my original panblog
+software and the output separate (and because the panblog repo pushes
+the site to _site folder and I don’t see a way on tildegit to specify a
+subdirectory the way you can on GitHub pages).</p>
+<p>Earlier in the afternoon I worked on the timelapse website for my
+colleagues and built another test page for them to check out. It’s like
+a very low, very slow flipbook, one image a second, all day, of plants
+germinating, growing. I will be taking a 24 hour video, converting it to
+still images, one per second, pegged to the exact hour:minute:second in
+the day. I decided to do this with front-end only and implemented an
+async promises approach to image-load. I don’t have any previous
+experience with promises so looked at some examples and then tried to
+implement the idea myself. I used test video rendered to stills via
+ffmpeg for the test site I built. Now that the test site works the next
+step is to build the final site. I’ll need to grab the huge
+multi-gigabyte video file and chop it up through ffmpeg and name the
+files based on HH-MM-ss. I may need some shell scripting to output each
+frame with the correct filenaming schema. Then I’ll have to modify my
+code a bit. Finally, there is supposed to be a poem, some overlaid text
+on top of the image files so some CSS wrangling for that, especially if
+the site needs to work on mobile. I think I’ll get back to this project
+next week after the semester ends.</p>
+<p>In the evening I went to one of the book release events for Nick
+Montfort and Lillyan-Yvonne Bertram’s (editors) anthology book OUTPUT
+which is a compilation of generated texts spanning from 1953 - 2023.</p>
+<p>Tomorrow I need to get back to working on the computational art
+website Random Walk that I’m building out with student artwork.</p>
 <p><a href="#">↑top</a></p>
 </body>
 </html>
