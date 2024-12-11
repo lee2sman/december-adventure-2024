@@ -131,8 +131,6 @@ Then I played around with the CSS, running build each time I made a change, and 
 
 I'm feeling pretty great about this. I'll come back and do another site test for something different later, then announce and get friends to try it out, and then spread the word. It's great I've built this tool, something I've felt I've needed for years. Goodbye Jekyll! (Well, except for the two big projects I've built that rely on it and I'm not sure I want to switch them now because they rely on Liquid Templating. But one day, if I have to!)
 
-<div id="current"></div>
-
 ## Dec 9
 
 Today I prepped and pushed a v0.1alpha release of panblog. As it's pretty late at night, I'll try to announce to friends starting tomorrow and see if they want to try it out. I've also published a [demo site](https://exquisitecorp.tildepages.org/panblog-demo/), built using the the panblog repo "out of the box". In prep for that I pushed some fixes to build.sh, cleaned up the css template, and updated the demo posts with some additional text. Then I spent a little time reading up on hosting via [tildepages](https://tilde.wiki/Tildepages). It was pretty easy, but I did post the site to a separate repo to keep my original panblog software and the output separate (and because the panblog repo pushes the site to _site folder and I don't see a way on tildegit to specify a subdirectory the way you can on GitHub pages).
@@ -143,5 +141,14 @@ In the evening I went to one of the book release events for Nick Montfort and Li
 
 Tomorrow I need to get back to working on the computational art website Random Walk that I'm building out with student artwork.
 
+<div id="current"></div>
+
+## Dec 10
+
+A little coding today. I was working with a student on a project and we needed to figure out a flashlight-type effect where moving the mouse around illuminates hidden items in a dark scene. I tested out the mask procedure that's been added to p5 since I had last checked. But the way it works in an additive fashion didn't mesh well with how I was approaching it at first and I couldn't immediately get the specific result I wanted to get. So I quickly plunged into a bit of a brute force approach and I figured out a fake masking effect by creating a black opaque image twice as wide and twice as high as the screen dimensions, with a transparent circle in the center. This gets centered and drawn on screen at the coordinates of mouseX,mouseY. Moving that around as the player moves around illuminates the scene. Optionally, I could have the whole scene covered in complete darkness and switch to the one with the hole only when pressing down the mouse. I don't know if I'll need this again but it was a fun little test.
+
+![Random Walk screenshot](assets/img/random.jpg)  
+
+In the evening, I prepped the [Random Walk](https://randomwalk.club/) website to be ready for public release. Random Walk is my now online journal of computational art, inspired by [Taper](https://taper.badquar.to), [Oral.pub](https://oral.pub/) and the [HTML Review](https://thehtml.review/). In the first *issue* of Random Walk I published work from the students of my intro course Programming for Visual Artists. This is a class for students with no previous background in programming. They get a math credit, and I teach them how to make art with code. Of course we do cover all the basics from variables and functions to loops, conditionals, arrays, and objects, a graphics pipeline, working with media and sound. All that and fluxus, Yoko Ono, to the experiments at Bell Labs, to early net art and contemporary new media artists that work with code as medium. The idea for the online journal came to me last month when the students were giving presentations on their work and I was impressed by their work and what they had to say about it. I thought creating a website inspired by these other online journals could make a nice framing device, and I coded up most of the site around the Thanksgiving break. As well, I hope this site provides me some flexibility for future online computational art issues, perhaps from my Purchase College community, or perhaps beyond.
 
 [↑top](#)
