@@ -165,12 +165,19 @@ Here's a screenshot of hair, textured with my digital drawings, floating at an a
 
 ![hair flying in 3d space](assets/img/hair.jpg)
 
-<div id="current"></div>
-
 ## Dec 13
 
 I did not code today but I thought about coding. Instead I did some school work, got a covid shot, and went to a magazine release party/performance/reading and then a party at a friend's loft. I got home and didn't feel like coding and instead listened to field recordings / experimental music on [Biesentales Radio](https://cashmereradio.com/shows/biesentales/) / Cashmere Radio. I thought about my experiments with g3d yesterday and currently I think it probably makes the most sense to keep going with its p5.js incarnation that I already started first, rather than try to port the thing to Love2d and get stuck in the weeds. What I'll probably do is keep working with the p5 project as is and complete the initial idea in my head, since it's not far off. Treat that as a prototype and see if the story and project feel like they're working out. It may work, or may need more attention. I can experiment with the drawings wrapping around the head of the charaters, with a random-path narrative, and try out moving the camera, etc. I need to see how WEBGL works or if it crashes too much with my files. Then I'll consider if its needed to port to Love2d, Blender's [UPBGE](https://upbge.org/#/) game engine (that [Danielle Brathwaite-Shirley](https://www.daniellebrathwaiteshirley.com/) told me she uses and likes), or maybe Godot. Hmmm. I also want to play with Pure Data/Plug Data, and play more modular synth, and work on Solar Sounders with [Daniel](http://dfiction.com/). And the handheld PockChip. And my podcast! So much I can play with during the winter break. Ok, going to go read in bed.
 
 Coming back a couple hours later. I tried setting up the [Swords of Freeport](https://swordsoffreeport.com/) door-game/MUD-like on the tilde server. I hope I set it up right for other players. I tried it myself and played for a bit. It's fun.
+
+<div id="current"></div>
+
+## Dec 14
+
+I checked out [Seamstress](https://github.com/robbielyman/seamstress) art engine, which you program in Lua, and uses Love2d, Zig and Lua under the hood to allow the user to program small art and music sketches, kind of like little guitar pedal effects and patches I think, but the workflow seems to mostly revolve around Monome Grid or midi, neither of which I use, and I couldn't find any other starter code. I moved on and checked out [yabasic](http://2484.de/yabasic/), and I like how flexible it is. I don't immediately have a project in it, but I was looking around for FutureBasic (which I purchased for my birthday as a kid) and was looking into whether there were any Basic variants that allow functions, for example, and came across yabasic. It's modern and minimal, cross-platform, and includes visual libraries and socket libraries, so this could be something cool to work with.
+
+Then I spent time working in audio editing to prep for integration with my p5.js code. I need to separate out an interview I did with my mom last month into separate voice tracks. The audio source is only about 20 minutes long, so I decided that rather than edit, since I didn't know what *shape* things will take, I would first just try to test how things/look sound when the audio and visual sketch are combined together. To complete, I first duped the audio and used audacity to cut out my mom's voice from my own audio track and exported it. Then I began work to separate my voice from my mom's audio track. I didn't quite finish yet, probably tomorrow. Now I have to head to the rhizome fair and then the sauna night and holiday party at my art collective, so probably no more code or project work today.
+
 
 [↑top](#)
