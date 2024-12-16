@@ -171,13 +171,26 @@ I did not code today but I thought about coding. Instead I did some school work,
 
 Coming back a couple hours later. I tried setting up the [Swords of Freeport](https://swordsoffreeport.com/) door-game/MUD-like on the tilde server. I hope I set it up right for other players. I tried it myself and played for a bit. It's fun.
 
-<div id="current"></div>
-
 ## Dec 14
 
 I checked out [Seamstress](https://github.com/robbielyman/seamstress) art engine, which you program in Lua, and uses Love2d, Zig and Lua under the hood to allow the user to program small art and music sketches, kind of like little guitar pedal effects and patches I think, but the workflow seems to mostly revolve around Monome Grid or midi, neither of which I use, and I couldn't find any other starter code. I moved on and checked out [yabasic](http://2484.de/yabasic/), and I like how flexible it is. I don't immediately have a project in it, but I was looking around for FutureBasic (which I purchased for my birthday as a kid) and was looking into whether there were any Basic variants that allow functions, for example, and came across yabasic. It's modern and minimal, cross-platform, and includes visual libraries and socket libraries, so this could be something cool to work with.
 
 Then I spent time working in audio editing to prep for integration with my p5.js code. I need to separate out an interview I did with my mom last month into separate voice tracks. The audio source is only about 20 minutes long, so I decided that rather than edit, since I didn't know what *shape* things will take, I would first just try to test how things/look sound when the audio and visual sketch are combined together. To complete, I first duped the audio and used audacity to cut out my mom's voice from my own audio track and exported it. Then I began work to separate my voice from my mom's audio track. I didn't quite finish yet, probably tomorrow. Now I have to head to the rhizome fair and then the sauna night and holiday party at my art collective, so probably no more code or project work today.
 
+<div id="current"></div>
+
+## Dec 15
+
+Today I got back to working on the project in p5.js. When I cut off yesterday I hadn't yet solved an issue with detecting volume level separately. I always advise my students to pull out the problem section of code and try to isolate it and debug it. So I did that, and showed my partner. And talking it through together and looking at the old p5.sound reference I found I was using the wrong method to set the amplitude. Well with that knowledge I made a successful [test p5 sketch](https://editor.p5js.org/2sman/sketches/llqCyQB27) through the web editor to demonstrate tracking two different voice files. So now I could apply that to my main project and quickly had success of a sorts. 
+
+![screenshot of early demo of "hyphenated heads", in p5.js/WEBGL](assets/img/heads.jpg)
+
+I got to a first test point. I have two heads load, and they start to have a conversation. I don't think it's particularly visually compelling or a complete anything yet, but here's my open studio and you're poking your head around checking out what I have piled up on the floor. Here it is. Oof, must have audio capture mis-configured. It sounds like I recorded audio routed out, captured back in by the mic! No idea.
+
+The conversation is one I recorded between my mother and I a couple weeks ago. I interview her about our family name, why we changed it, and intersections with our culture, feminism, and equality. This demo capture below is just the first half a minute, while I'm testing moving the camera around. The background is blank, and our heads are fairly simplified. I think all of this will change, but it's meant to be a start for me to evaluate whether this is even fruitful to pursue as a project I envisioned in my head originally about a year ago.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/En5UJmZsPU8?si=jEdWXgBfGu90XAd0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+I watched for a while. I need to do some minor audio edits but Audacity glitched out. I think my running the sketch takes up lots of memory. I need to look into it further. But I'll say that my thought that this is a compelling approach to telling the story seemed to 'work' or at least seemed like a promising approach. But having just the lips move and occasional eye movement is missing some of the 'natural' feeling needed. The heads are fake but with the recorded voice it approaches an uncanny valley. I added in occasional head tilts a bit, because we're missing the natural body movements with the floating heads without bodies. This helped a bit. I'm wondering if next I should add in something like the TV style 3 camera approach, strait ahead, 2/3 view, and entire scene. I also wondered if the heads should be looking at each other directly or if this angled for an audience view worked better. When I interviewed my mom I looked directly at her. When I interview for a podcast in person we sit at an angle together. Maybe adding switching camera views could add something. Perhaps even looking out from someone's eyes. I am also confirming the background blank doesn't work well. I want there to be a complex, changing background. I'm worried I'll run out of memory and should have moved to Godot or Love/g3d. In any case, things are moving forward and I like the approach.
 
 [↑top](#)
