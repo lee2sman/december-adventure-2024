@@ -57,7 +57,7 @@ figcaption {
   font-weight: bold;
 }
 
-img {
+img, iframe {
 /*    padding: 0.5rem;  */
     display: block;
     max-width: 100%;
