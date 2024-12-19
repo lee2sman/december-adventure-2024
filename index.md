@@ -197,10 +197,14 @@ More work on the "hyphenated" project. That's just a working title. I added glas
 
 ![glasses on my avatar](assets/img/glasses.jpg)  
 
-<div id="current"></div>
-
 ## Dec 17
 
 No work on my own code today. Had some appointments, and grading is due tomorrow. 
+
+<div id="current"></div>
+
+## Dec 18
+
+Finished grading today. Two holiday parties tonight. When I got home I worked on the website project for my colleagues that have an exhibit. The website loads a new unique photo every second for a 24 hour cycle of blooming flowers. I wrote the image loading script earlier this month on the 9th. Today I worked on creating and styling the modal, and then ran a test. Since it was after midnight, I immediately noticed a problem: the generated images from the movie source count like this: 1, 2, 3,...10, 11, 12..100,...etc. But the files are name sequentially like this: 000001.jpg, 000002.jpg, etc. This is trivial to do, but it still requires doing! So I wrote in this code to convert seconds to this proper filename if the time is less than 5 digits in length and voila, a first test done.
 
 [↑top](#)
