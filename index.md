@@ -205,10 +205,14 @@ No work on my own code today. Had some appointments, and grading is due tomorrow
 
 Finished grading today. Two holiday parties tonight. When I got home I worked on the website project for my colleagues that have an exhibit. The website loads a new unique photo every second for a 24 hour cycle of blooming flowers. I wrote the image loading script earlier this month on the 9th. Today I worked on creating and styling the modal, and then ran a test. Since it was after midnight, I immediately noticed a problem: the generated images from the movie source count like this: 1, 2, 3,...10, 11, 12..100,...etc. But the files are name sequentially like this: 000001.jpg, 000002.jpg, etc. This is trivial to do, but it still requires doing! So I wrote in this code to convert seconds to this proper filename if the time is less than 5 digits in length and voila, a first test done.
 
-<div id="current"></div>
-
 ## Dec 19
 
 Some experiments with the narrative piece today. I added ears, trivial. But then I also tried searching for and changing out images, both the texture on the heads as well as adding a scrolling background class. I need to do more work on the scroll, and the images DO NOT WORK WELL and I really need to find others. I am not finding exactly what I'm looking for, but I tried some things from the Metropolitan Museum of Art's online collection. I'm looking for patterned, woodblock prints and the like, textures, paintings, other things from 1900s jewish immigration period, but that's hard for me to look for online, and I think I'll need to visit a library or special collection to even begin to find useful things. I'm thinking I may try the New York Public Library next. 
+
+<div id="current"></div>
+
+## Dec 20
+
+Was out most of the day and away from computers. Spent a little time before bed working on the background scrolling technique, making it more efficient. Didn't finish but figured out some bugs.
 
 [↑top](#)
