@@ -209,10 +209,32 @@ Finished grading today. Two holiday parties tonight. When I got home I worked on
 
 Some experiments with the narrative piece today. I added ears, trivial. But then I also tried searching for and changing out images, both the texture on the heads as well as adding a scrolling background class. I need to do more work on the scroll, and the images DO NOT WORK WELL and I really need to find others. I am not finding exactly what I'm looking for, but I tried some things from the Metropolitan Museum of Art's online collection. I'm looking for patterned, woodblock prints and the like, textures, paintings, other things from 1900s jewish immigration period, but that's hard for me to look for online, and I think I'll need to visit a library or special collection to even begin to find useful things. I'm thinking I may try the New York Public Library next. 
 
-<div id="current"></div>
-
 ## Dec 20
 
 Was out most of the day and away from computers. Spent a little time before bed working on the background scrolling technique, making it more efficient. Didn't finish but figured out some bugs.
+
+<div id="current"></div>
+
+## Dec 21
+
+Wow, a great day. In the morning I started the process to set up a research consultation at the New York Public Library and specified the kinds of patterns and photos and prints I'm looking for, and to check out the [Dorot Jewish Division](https://www.nypl.org/locations/schwarzman/jewish-division) of the library. I have an appointment booked in January. 
+
+Then I took a solo trip to MOMA, joined as an artist member, then had an incredible time walking around and seeing art. Highlights included seeing Van Gogh's Starry Night, Rafael Rozendaal's large projection of Css (and JS) works in the lobby, Christian Marclay's The Clock, and so much more I obviously can't describe them all (Pollock, Warhol, new contemporary installations, John Giorno's Dial-A-Poem, Nour Mobarak's great audiovisual installation, Robert Frank's video scrap files, Matisse's paper cuts...). 
+
+I think seeing the Romare Bearden [patchwork quilt](https://www.moma.org/collection/works/79986) collage work today, along with the other video and art installations might have inspired this idea. I'm not sure. But I came up with this idea of using my [NaNoGenMo quilt poem concept and code](https://leetusman.com/nosebook/quilt-poems) to create new quilt-patterned photo grids using my photography archive. I had to rewrite, used some old code, but in the end it's only about 50 lines of code or so, save for the quilt pattern encodings as data. This is just a first iteration but I'm already kind of pleased. It pulls a random quilt pattern, then 8 photos, resizes them to a standard block square size, then builds the quilt according to that pattern from the quilts.lua file. 
+
+![a "little coins" quilt arrangement](assets/img/quilt1.jpg)
+
+![a "drunkard's path" quilt arrangement](assets/img/quilt2.jpg)
+
+After coming up with the idea but before I coded it tonight I had dinner with an artist friend and talked about how excited I was to execute the idea. I began brainstorming some future ideas and iterations, which has turned into these following ideas I may want to try going forward:
+
+* pick a random quad from the photo rather than resize whole photo source
+* pan and scan over the photos so they are moving?
+* some photos and some plain color fields?
+* do videos instead of or in addition to photos? i guess that'll start looking like a nam june paik.
+
+I'm not sure the meaning of the work or if it will stay purely abstract at this point but it's feeling fruitful. I think personally without a broader social or even basic concept I can't get to a point where a piece will feel complete. I also wished this would be useful as background for the other work, the interview piece with my mom, but I don't see a connection here yet. In any case working in Lua/Love2d is a nice and intuitive process for me now, even as I still rely greatly on the reference. I enjoyed my coding tonight. I have a [code repo](https://tildegit.org/exquisitecorp/quilt-photo-grids) for the work in case I keep going with it.
+
 
 [↑top](#)
