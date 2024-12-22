@@ -213,8 +213,6 @@ Some experiments with the narrative piece today. I added ears, trivial. But then
 
 Was out most of the day and away from computers. Spent a little time before bed working on the background scrolling technique, making it more efficient. Didn't finish but figured out some bugs.
 
-<div id="current"></div>
-
 ## Dec 21
 
 Wow, a great day. In the morning I started the process to set up a research consultation at the New York Public Library and specified the kinds of patterns and photos and prints I'm looking for, and to check out the [Dorot Jewish Division](https://www.nypl.org/locations/schwarzman/jewish-division) of the library. I have an appointment booked in January. 
@@ -235,6 +233,22 @@ After coming up with the idea but before I coded it tonight I had dinner with an
 * do videos instead of or in addition to photos? i guess that'll start looking like a nam june paik.
 
 I'm not sure the meaning of the work or if it will stay purely abstract at this point but it's feeling fruitful. I think personally without a broader social or even basic concept I can't get to a point where a piece will feel complete. I also wished this would be useful as background for the other work, the interview piece with my mom, but I don't see a connection here yet. In any case working in Lua/Love2d is a nice and intuitive process for me now, even as I still rely greatly on the reference. I enjoyed my coding tonight. I have a [code repo](https://tildegit.org/exquisitecorp/quilt-photo-grids) for the work in case I keep going with it.
+
+<div id="current"></div>
+
+## Dec 22
+
+I'm having a lot of fun working on my quilt variations. Yesterday I had the the photo blocks consisting of resized photos squished into the size of a block. Today I modified the program to pull random quads from the photos instead. So the images have gotten more abstract, but more interesting. Still, I'm producing abstractions and even more Nam June Paik-ish work. These are with still images. Maybe next I can try the 'pan-and-scan' approach and then video?
+
+![amish bars quilt](assets/img/amish-bars.jpg)
+
+![little coins quilt](assets/img/little-coins.jpg)
+
+![Drunkard's path quilt](assets/img/drunkards.jpg)
+
+![Checkerboard pattern quilt](assets/img/checkerboard.jpg)
+
+I have a bit of a memory issue I think. After generating 15 quilts every time there is a crash and my program errors and quits. I'm assuming the images are loaded in memory and not overwriting the previous. In Javascript I think it would just overrwrite but I guess I'm not understanding in Lua what it's doing on the back. I need to read more about memory and images and see if I can fix this in the future.
 
 
 [↑top](#)
