@@ -234,8 +234,6 @@ After coming up with the idea but before I coded it tonight I had dinner with an
 
 I'm not sure the meaning of the work or if it will stay purely abstract at this point but it's feeling fruitful. I think personally without a broader social or even basic concept I can't get to a point where a piece will feel complete. I also wished this would be useful as background for the other work, the interview piece with my mom, but I don't see a connection here yet. In any case working in Lua/Love2d is a nice and intuitive process for me now, even as I still rely greatly on the reference. I enjoyed my coding tonight. I have a [code repo](https://tildegit.org/exquisitecorp/quilt-photo-grids) for the work in case I keep going with it.
 
-<div id="current"></div>
-
 ## Dec 22
 
 I'm having a lot of fun working on my quilt variations. Yesterday I had the the photo blocks consisting of resized photos squished into the size of a block. Today I modified the program to pull random quads from the photos instead. So the images have gotten more abstract, but more interesting. Still, I'm producing abstractions and even more Nam June Paik-ish work. These are with still images. Maybe next I can try the 'pan-and-scan' approach and then video?
@@ -255,5 +253,13 @@ Coming back several hours later and a stranger on an internet forum is trying to
 Meanwhile I posted that my fave music from 2024 is the A. G. Cook track [Silver Needle Golden Thread](https://www.youtube.com/watch?v=GWAocs5P0no). Someone directed me to the music video for it, made by artist Lena Weber ([great interview about the piece, coded in python](https://timrodenbroeker.de/lena-weber-ag-cook/). I realize that my quilt-maker could be in this line, but the memory issue is preventing this. 
 
 Meanwhile I spin up another Love2d test file. Now I practice drawing images to an offscreen canvas buffer, then pan across that buffer and draw a section to the screen. This is my test of drawing panning/scanning images. First test passes. I may try to integrate this into the quilt pieces.
+
+<div id="current"></div>
+
+## Dec 23
+
+Wow, wow! Thanks to a stranger for chatting with me online on the Love2d reddit. They tested the garbage collector and that single line added prevented the memory errors. So I added it to my code, and boom, it works! No crashes. Another person suggested the canvas drawing approach was a good one to speed things up as well. So I'll use my side code from yesterday and probably integrate that in as well if I want to make this 'music video' speed. I could also likely run the garbagecollector somewhat less often and do some tests, instead of every new quilt, maybe every 5 for example. I've already shot some video using this v1 of the software. It's working well. I'm happy. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s4I0x5bUnsg?si=UY3Ps7VhyYIcJvZx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [↑top](#)
