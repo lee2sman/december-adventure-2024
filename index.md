@@ -250,5 +250,10 @@ I'm having a lot of fun working on my quilt variations. Yesterday I had the the 
 
 I have a bit of a memory issue I think. After generating 15 quilts every time there is a crash and my program errors and quits. I'm assuming the images are loaded in memory and not overwriting the previous. In Javascript I think it would just overrwrite but I guess I'm not understanding in Lua what it's doing on the back. I need to read more about memory and images and see if I can fix this in the future.
 
+Coming back several hours later and a stranger on an internet forum is trying to figure out the memory issue with me. They made some suggestions but each of these didn't solve it. 
+
+Meanwhile I posted that my fave music from 2024 is the A. G. Cook track [Silver Needle Golden Thread](https://www.youtube.com/watch?v=GWAocs5P0no). Someone directed me to the music video for it, made by artist Lena Weber ([great interview about the piece, coded in python](https://timrodenbroeker.de/lena-weber-ag-cook/). I realize that my quilt-maker could be in this line, but the memory issue is preventing this. 
+
+Meanwhile I spin up another Love2d test file. Now I practice drawing images to an offscreen canvas buffer, then pan across that buffer and draw a section to the screen. This is my test of drawing panning/scanning images. First test passes. I may try to integrate this into the quilt pieces.
 
 [↑top](#)
