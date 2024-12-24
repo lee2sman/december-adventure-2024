@@ -262,4 +262,6 @@ Wow, wow! Thanks to a stranger for chatting with me online on the Love2d reddit.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/s4I0x5bUnsg?si=UY3Ps7VhyYIcJvZx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+Later in the day, based on some suggestions from the internet forum I decided to try out drawing with the canvas functionality to see if there's a performance boost. So now I have implemented drawing the photo grid to an offscreen buffer canvas, then in the end of the draw() function I draw that canvas onto the screen render. I do think maybe there's a bit of a performance boost, but the speed doesn't knock us into fast frenetic music video speed yet. Maybe next I need to try some scaling and somewhat less frequent garbage collection. In any case, I still think I have a successfull first version of this project.
+
 [↑top](#)
