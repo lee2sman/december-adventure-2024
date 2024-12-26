@@ -983,9 +983,6 @@ images to an offscreen canvas buffer, then pan across that buffer and
 draw a section to the screen. This is my test of drawing
 panning/scanning images. First test passes. I may try to integrate this
 into the quilt pieces.</p>
-<div id="current">
-
-</div>
 <h2 id="dec-23">Dec 23</h2>
 <p>Wow, wow! Thanks to a stranger for chatting with me online on the
 Love2d reddit. They tested the garbage collector and that single line
@@ -1008,6 +1005,49 @@ there’s a bit of a performance boost, but the speed doesn’t knock us
 into fast frenetic music video speed yet. Maybe next I need to try some
 scaling and somewhat less frequent garbage collection. In any case, I
 still think I have a successfull first version of this project.</p>
+<h2 id="dec-24">Dec 24</h2>
+<p>I was away from my computer for the day/night so didn’t do any
+coding. But I did read the bulk of <a
+href="https://direct.mit.edu/books/edited-volume/5867/OutputAn-Anthology-of-Computer-Generated-Text-1953">Output:
+An Anthology of Computer-Generated Text, 1953 - 2023</a>. I also read a
+bit some programming articles on my phone before bed.</p>
+<div id="current">
+
+</div>
+<h2 id="dec-25">Dec 25</h2>
+<p>Got home pretty late. I had the idea to try out adding a first
+version of image panning to my quilt generating program. First I watched
+some examples of “the Ken Burns effect” on youtube but then realized I
+didn’t need all that, just a simple pan. I wasn’t sure at first how to
+implement it, but it turned out to be simple. Rather than choose a
+random starting x and y coordinate each time I draw a quad now I create
+an starting x and y coordinate for each quad in a table and just alter
+the x and y coordinates in the love.update() function. There’s a slight
+“hiccup” each time a new quilt is assembled. I tried taking out the
+garbage collector and it is no slower, but also no faster. It doesn’t
+crash anymore either. Maybe the new quad coordinates somehow trigger the
+hidden garbage collector to work? I really am not sure. Anyway, here’s a
+simple test of panning:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zmQ5-bJvEDo?si=7Y8c_MgKyLtnNMsi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+<p>I need to figure out where I want to go next with this project.</p>
+<ul>
+<li>Should only some images pan while others are static?</li>
+<li>pan different direction (up, down, left, right) randomly selected at
+start?</li>
+<li>Should I play with scale and have each quilt have bigger or smaller
+blocksize?</li>
+<li>To the point: what would it take for this project to feel
+<em>finished</em>?</li>
+</ul>
+<p>I am also thinking I may want to try making more intentional image
+sets: either use my ENTIRE travel photo set, or maybe just graffiti
+photo set (and why that?).</p>
+<p>I wonder if I want to add modular synth music to this. Or maybe an
+audio interview or recordings on top. Or maybe…‘procedurally generated’
+randomly selected audio clippets and maybe music.</p>
+<p>I might need to put the project down for a bit and then come back to
+it and see what I feel compelled to do.</p>
 <p><a href="#">↑top</a></p>
 </body>
 </html>

@@ -254,8 +254,6 @@ Meanwhile I posted that my fave music from 2024 is the A. G. Cook track [Silver 
 
 Meanwhile I spin up another Love2d test file. Now I practice drawing images to an offscreen canvas buffer, then pan across that buffer and draw a section to the screen. This is my test of drawing panning/scanning images. First test passes. I may try to integrate this into the quilt pieces.
 
-<div id="current"></div>
-
 ## Dec 23
 
 Wow, wow! Thanks to a stranger for chatting with me online on the Love2d reddit. They tested the garbage collector and that single line added prevented the memory errors. So I added it to my code, and boom, it works! No crashes. Another person suggested the canvas drawing approach was a good one to speed things up as well. So I'll use my side code from yesterday and probably integrate that in as well if I want to make this 'music video' speed. I could also likely run the garbagecollector somewhat less often and do some tests, instead of every new quilt, maybe every 5 for example. I've already shot some video using this v1 of the software. It's working well. I'm happy. 
@@ -263,5 +261,30 @@ Wow, wow! Thanks to a stranger for chatting with me online on the Love2d reddit.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/s4I0x5bUnsg?si=UY3Ps7VhyYIcJvZx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Later in the day, based on some suggestions from the internet forum I decided to try out drawing with the canvas functionality to see if there's a performance boost. So now I have implemented drawing the photo grid to an offscreen buffer canvas, then in the end of the draw() function I draw that canvas onto the screen render. I do think maybe there's a bit of a performance boost, but the speed doesn't knock us into fast frenetic music video speed yet. Maybe next I need to try some scaling and somewhat less frequent garbage collection. In any case, I still think I have a successfull first version of this project.
+
+## Dec 24
+
+I was away from my computer for the day/night so didn't do any coding. But I did read the bulk of [Output: An Anthology of Computer-Generated Text, 1953 - 2023](https://direct.mit.edu/books/edited-volume/5867/OutputAn-Anthology-of-Computer-Generated-Text-1953). I also read a bit some programming articles on my phone before bed.
+
+<div id="current"></div>
+
+## Dec 25
+
+Got home pretty late. I had the idea to try out adding a first version of image panning to my quilt generating program. First I watched some examples of "the Ken Burns effect" on youtube but then realized I didn't need all that, just a simple pan. I wasn't sure at first how to implement it, but it turned out to be simple. Rather than choose a random starting x and y coordinate each time I draw a quad now I create an starting x and y coordinate for each quad in a table and just alter the x and y coordinates in the love.update() function. There's a slight "hiccup" each time a new quilt is assembled. I tried taking out the garbage collector and it is no slower, but also no faster. It doesn't crash anymore either. Maybe the new quad coordinates somehow trigger the hidden garbage collector to work? I really am not sure. Anyway, here's a simple test of panning:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zmQ5-bJvEDo?si=7Y8c_MgKyLtnNMsi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+I need to figure out where I want to go next with this project. 
+
+* Should only some images pan while others are static?
+* pan different direction (up, down, left, right) randomly selected at start?
+* Should I play with scale and have each quilt have bigger or smaller blocksize?
+* To the point: what would it take for this project to feel *finished*?
+
+I am also thinking I may want to try making more intentional image sets: either use my ENTIRE travel photo set, or maybe just graffiti photo set (and why that?).
+
+I wonder if I want to add modular synth music to this. Or maybe an audio interview or recordings on top. Or maybe...'procedurally generated' randomly selected audio clippets and maybe music.
+
+I might need to put the project down for a bit and then come back to it and see what I feel compelled to do.
 
 [↑top](#)
