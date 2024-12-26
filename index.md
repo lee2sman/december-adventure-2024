@@ -287,4 +287,6 @@ I wonder if I want to add modular synth music to this. Or maybe an audio intervi
 
 I might need to put the project down for a bit and then come back to it and see what I feel compelled to do.
 
+Later on someone asked me about the software on Mastodon and I linked them to the repo. I realized maybe I should add a license and like always overthought then came back to the ACSL license. The person asking about the software has previous experience in p5 but not Love so I pointed them to my tutorial [From Processing to Love](https://github.com/lee2sman/processing-to-love). I added some additional notes on seeding pseudorandom numbers in Love, and async/sync differences in p5/processing/love.
+
 [↑top](#)
