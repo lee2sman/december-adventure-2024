@@ -266,8 +266,6 @@ Later in the day, based on some suggestions from the internet forum I decided to
 
 I was away from my computer for the day/night so didn't do any coding. But I did read the bulk of [Output: An Anthology of Computer-Generated Text, 1953 - 2023](https://direct.mit.edu/books/edited-volume/5867/OutputAn-Anthology-of-Computer-Generated-Text-1953). I also read a bit some programming articles on my phone before bed.
 
-<div id="current"></div>
-
 ## Dec 25
 
 Got home pretty late. I had the idea to try out adding a first version of image panning to my quilt generating program. First I watched some examples of "the Ken Burns effect" on youtube but then realized I didn't need all that, just a simple pan. I wasn't sure at first how to implement it, but it turned out to be simple. Rather than choose a random starting x and y coordinate each time I draw a quad now I create an starting x and y coordinate for each quad in a table and just alter the x and y coordinates in the love.update() function. There's a slight "hiccup" each time a new quilt is assembled. I tried taking out the garbage collector and it is no slower, but also no faster. It doesn't crash anymore either. Maybe the new quad coordinates somehow trigger the hidden garbage collector to work? I really am not sure. Anyway, here's a simple test of panning:
@@ -288,5 +286,13 @@ I wonder if I want to add modular synth music to this. Or maybe an audio intervi
 I might need to put the project down for a bit and then come back to it and see what I feel compelled to do.
 
 Later on someone asked me about the software on Mastodon and I linked them to the repo. I realized maybe I should add a license and like always overthought then came back to the ACSL license. The person asking about the software has previous experience in p5 but not Love so I pointed them to my tutorial [From Processing to Love](https://github.com/lee2sman/processing-to-love). I added some additional notes on seeding pseudorandom numbers in Love, and async/sync differences in p5/processing/love.
+
+<div id="current"></div>
+
+## Dec 26
+
+Today I visited the New York Public Library. I had an appointment with a research librarian at the Gregorian Center for Research in the Humanities to help me with some research in the Dorot Jewish Division. I am interested in finding some resources that might inform the piece I'm working on currently, that consists of a conversation between my mom and I, and wanted to see if I could find any sources that might inform my work, or might be useful visual images to incorporate into the digital construction. After getting a thorough overview of research sources and databases I browsed various digital archives and then requested some old cookbooks for on-site research, thinking that they may have imagery that might potentially be useful to me. In the afternoon I worked on editing and cleaning up the audio interview source a bit. Later I did a bit of work with in code cleaning up the background scroll, and adding in the new image sources from today at the library. While the images don't feel like they cohere yet, I think it feels like it's cohering around the original vision I had in my head. I'm feeling like it's time for "studio visits." I'm going to show my family when I visit them this weekend, and I think I'll set up studio visits with some artist friends to start to get some feedback to see what's working or not, and if I'm on the right track.
+
+With just a few days left in December, I feel like this has been a useful month and gotten me on a good daily work progress. I hope to continue this throughout the year ahead, just as I used to do [everydays](https://leetusman.com/projects/everyday/) for a couple years and found them pretty helpful for advancing my programming as well as my art practice. Since I'm moving away from Javascript somewhat, and because some of these projects are 'larger', this journaling has been nice for the month, though I'm not sure I want to continue doing it to this frequency or amount of writing.
 
 [↑top](#)
