@@ -293,8 +293,6 @@ Today I visited the New York Public Library. I had an appointment with a researc
 
 With just a few days left in December, I feel like this has been a useful month and gotten me on a good daily work progress. I hope to continue this throughout the year ahead, just as I used to do [everydays](https://leetusman.com/projects/everyday/) for a couple years and found them pretty helpful for advancing my programming as well as my art practice. Since I'm moving away from Javascript somewhat, and because some of these projects are 'larger', this journaling has been nice for the month, though I'm not sure I want to continue doing it to this frequency or amount of writing.
 
-<div id="current"></div>
-
 ## Dec 27
 
 I was out most of the day and night. Before bed I spent some time reviewing the LOGO language. I am teaching a course in the spring where I covered LOGO the previous time I taught it so I was wondering if I wanted to do that again. For some reason, I have been feeling less interest in LOGO lately, so I wanted to see if I could get some spark back. I decided to try a few variants that intrigued me and play with my own little PLOGO Javascript library as well. First, I read about [LibreLogo](https://www.stuestoel.no/office/logo/en/logo-startside.php). Did you know that LibreOffice is packaged with a LOGO variant, and that you run it inside a document? Weird! Cool that it's in LibreOffice so it's very accessible, but entering commands in the input form or running a page of a doc is a bit funny and I didn't take to it. 
@@ -304,5 +302,17 @@ So next I decided to try UCBLogo. First I tried the latest, which is on GitHub a
 The official [UCBLogo website](https://people.eecs.berkeley.edu/~bh/), which includes the downloads, is a wonderful example of a [Prof-Dr site](https://leetusman.com/nosebook/prof-dr-style) site by the way. I love it. I went through the first chapters of Brian Harvey's [Computer Science Logo Style volume 1: Symbolic Computing, 2nd Edition](https://people.eecs.berkeley.edu/~bh/v1ch1/explor.html) (available for download from the Harvey's UCBLogo website, published in 1997). It's the first of three books he wrote intended for both a general as well as a CS audience, and I enjoyed his writing style and emphasis on having fun and experimenting while learning the principles of LOGO and Lisp and general programming principles. Surprisingly to me, the books are NOT focused on Turtle graphics but on the principles of computing. 
 
 Next I tried messing around with Turtle graphics as I remembered them. I wanted to draw a random quilt, which is something I have my students do, but I accidentally mistyped something and had a recursive loop. I enjoyed watching it draw for a while but I couldn't figure out how to pause or stop while in a running procedure so I had to eventually force quit because I didn't feel like waiting. And that ends my first day playing with LOGO.
+
+<div id="current"></div>
+
+## Dec 28
+
+Today I went through the list of [LOGO software](https://el.media.mit.edu/logo-foundation/resources/software_hardware.html) on the LOGO Foundation's website. I tried out a lot of different web-based Turtle-graphics programming environments in search of one I'd like. Some are text-based and some block-based. All of these are intended for school audiences. Of the block based ones intended for young folks and a bit simpler than Scratch I liked [pencilcode](http://pencilcode.net/edit/first) more than [TurtleArt](https://www.playfulinvention.com/webturtleart/), though I do love turtleart's [reference guide manual](https://www.playfulinvention.com/webturtleart/webhelp/reference.html) is only 15 pages.
+
+Out of everything I tried I think the Apple LOGO II from 1984 is my favorite, and works well on [Archive.org](https://archive.org/details/Apple_Logo_II) except that you can't save there. 
+
+I didn't do a ton but tried out building some basic loops and functions.
+
+![Apple Logo II](assets/img/logo.png)  
 
 [↑top](#)
