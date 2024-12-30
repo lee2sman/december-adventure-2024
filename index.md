@@ -303,8 +303,6 @@ The official [UCBLogo website](https://people.eecs.berkeley.edu/~bh/), which inc
 
 Next I tried messing around with Turtle graphics as I remembered them. I wanted to draw a random quilt, which is something I have my students do, but I accidentally mistyped something and had a recursive loop. I enjoyed watching it draw for a while but I couldn't figure out how to pause or stop while in a running procedure so I had to eventually force quit because I didn't feel like waiting. And that ends my first day playing with LOGO.
 
-<div id="current"></div>
-
 ## Dec 28
 
 Today I went through the list of [LOGO software](https://el.media.mit.edu/logo-foundation/resources/software_hardware.html) on the LOGO Foundation's website. I tried out a lot of different web-based Turtle-graphics programming environments in search of one I'd like. Some are text-based and some block-based. All of these are intended for school audiences. Of the block based ones intended for young folks and a bit simpler than Scratch I liked [pencilcode](http://pencilcode.net/edit/first) more than [TurtleArt](https://www.playfulinvention.com/webturtleart/), though I do love turtleart's [reference guide manual](https://www.playfulinvention.com/webturtleart/webhelp/reference.html) is only 15 pages.
@@ -314,5 +312,15 @@ Out of everything I tried I think the Apple LOGO II from 1984 is my favorite, an
 I didn't do a ton but tried out building some basic loops and functions.
 
 ![Apple Logo II](assets/img/logo.png)  
+
+<div id="current"></div>
+
+## Dec 29
+
+Today I hung out with family and friends and barely put time to coding. I have just a few minutes before bed. I played in the browser with Pencil Code, a block-based editor like Scratch. I found that you could use the 'wear' block and type in a random word and most of the time it changes the turtle to that image.  
+
+Anyway, here's a [random quilt](http://leeto.pencilcode.net/edit/first-quilt) again. This took very little time .:) One thing I like about block editors is that you can generally instantly 'dump out all the blocks' like legos and see what commands are available. 
+
+![Random color block quilt coded in pencil code](assets/img/pencilcode.jpg)
 
 [↑top](#)
