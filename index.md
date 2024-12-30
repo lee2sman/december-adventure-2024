@@ -319,8 +319,31 @@ I didn't do a ton but tried out building some basic loops and functions.
 
 Today I hung out with family and friends and barely put time to coding. I have just a few minutes before bed. I played in the browser with Pencil Code, a block-based editor like Scratch. I found that you could use the 'wear' block and type in a random word and most of the time it changes the turtle to that image.  
 
-Anyway, here's a [random quilt](http://leeto.pencilcode.net/edit/first-quilt) again. This took very little time .:) One thing I like about block editors is that you can generally instantly 'dump out all the blocks' like legos and see what commands are available. 
+Anyway, here's a [random quilt](http://leeto.pencilcode.net/edit/first-quilt) again. This took very little time and is not written efficiently :) One thing I like about block editors is that you can generally instantly 'dump out all the blocks' like legos and see what commands are available. 
 
 ![Random color block quilt coded in pencil code](assets/img/pencilcode.jpg)
+
+You can `click for text` and switch to text mode.
+
+```LOGO
+moveto -200, 200
+speed Infinity
+for [1..4]
+  for [1..4]
+    pen random color
+    for [1..4]
+      fd 50
+      rt 90
+    fill random color
+    rt 90
+    fd 50
+    lt 90
+  lt 90
+  fd 200
+  rt 90
+  bk 50
+pen white, 10
+fd 50
+```
 
 [↑top](#)

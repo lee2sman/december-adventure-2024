@@ -1162,15 +1162,35 @@ could use the ‘wear’ block and type in a random word and most of the
 time it changes the turtle to that image.</p>
 <p>Anyway, here’s a <a
 href="http://leeto.pencilcode.net/edit/first-quilt">random quilt</a>
-again. This took very little time .:) One thing I like about block
-editors is that you can generally instantly ‘dump out all the blocks’
-like legos and see what commands are available.</p>
+again. This took very little time and is not written efficiently :) One
+thing I like about block editors is that you can generally instantly
+‘dump out all the blocks’ like legos and see what commands are
+available.</p>
 <figure>
 <img src="assets/img/pencilcode.jpg"
 alt="Random color block quilt coded in pencil code" />
 <figcaption aria-hidden="true">Random color block quilt coded in pencil
 code</figcaption>
 </figure>
+<p>You can <code>click for text</code> and switch to text mode.</p>
+<pre class="logo"><code>moveto -200, 200
+speed Infinity
+for [1..4]
+  for [1..4]
+    pen random color
+    for [1..4]
+      fd 50
+      rt 90
+    fill random color
+    rt 90
+    fd 50
+    lt 90
+  lt 90
+  fd 200
+  rt 90
+  bk 50
+pen white, 10
+fd 50</code></pre>
 <p><a href="#">↑top</a></p>
 </body>
 </html>
