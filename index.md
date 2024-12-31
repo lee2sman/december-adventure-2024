@@ -344,8 +344,6 @@ pen white, 10
 fd 50
 ```
 
-<div id="current"></div>
-
 ## Dec 30
 
 Same story as previous days: not much time for coding. I had a train ride though, and decided to work without internet. First, I spent some time reading Turtle Bunting: A LOGO Vexillological Reader.
@@ -378,5 +376,79 @@ It is cleaner (to me) to write more like the following, though I need to check t
 ```
 
 Today I also found [JSLogo](https://www.calormen.com/jslogo/) (see [code](https://github.com/inexorabletash/jslogo)), which looks useful for a mini 1-off workshop I may teach. 
+
+<div id="current"></div>
+
+## Dec 31
+
+End of the month!
+
+I'm having fun playing with LOGO the past few days. Today I spent time with LogoJS, by Joshua Bell, which implements a subset of UCBLogo and runs in the browser. It's really robust and full-featured.
+
+This is definitely the best web-based LOGO IDE I've used, and I like it as much or more than the p5.js web editor I teach in my Programming for Visual Artists class. Click to see examples and it shows basic easy to read and use example code that you can send to the code editor. By default it saves all code you run in its history. You can also click to see the reference popup, click Library and it pulls up the code for any procedures you've written. Brilliant.
+
+Here's a three turtle race, starting with some example code I modified:
+
+```logo
+clearscreen
+setturtle 2 penup right 90 forward 100 left 90 pendown
+setturtle 3 penup left 90 forward 100 right 90 pendown
+repeat 200 [
+  setturtle 1 forward random 4
+  setturtle 2 forward random 4
+  setturtle 3 forward random 4
+  wait 2
+]
+```
+
+I started reading the [Turtle Bunting](https://archive.org/details/peter-carter-turtle-bunting/page/n4/mode/1up?view=theater) workshop I wrote about yesterday. It is from 1990. I read the intro and did the first activity. The book assumes that you are using any of many versions of LOGO and will have to adapt the code for your version. 
+
+> In a conventional programming book there would be discussion of the process of analysis, design, coding and validation, with pseudocode, structure charts and that sort of thing. In this book there’s very little of that (there’s some in boxes) and you will work in reverse: this is programming by example. Read a procedure, think about it, and make sure you understand it before moving on to the next.
+
+So that's what I did. 
+
+The book goes on:
+
+> Aboriginal
+
+> It’s perhaps fitting that this is the first flag in the book. A simple, bold design, it was first used in the early 1970s, and has become a readily recognised symbol of the aboriginal community’s struggle for rights and recognition
+
+
+Here's my version of the Australian Aboriginal Flag:
+
+```logo
+to block :length :width
+  repeat :width / 2 [ fd :length rt 90 fd 1 rt 90 fd :length lt 90 fd 1 lt 90 ]
+end
+
+to earth
+  home rt 90 bk 158 setpencolor "red block 319 95
+end
+
+to sun
+  pu home pd setpencolor "yellow repeat 720 [ fd 60 bk 60 rt 0.5 ]
+end
+
+to people
+  home pu fd 90 rt 90 bk 158 pd setpencolor "black block 319 95
+end
+
+to aboriginalflag
+  people earth sun
+end
+
+aboriginalflag
+```
+
+There are procedures for many country flags in the workshop, sea signalling flags to be used by ships at sea, and the Earth flag. Each of the procedures are written in a different version of LOGO. Some random ones I encountered: Logotron LOGO, Apple Logo, Atari Logo, Macintosh Logo, LCSI Logo, LogoWriter.
+
+The workshop is pepppered with dozens of comments and questions like this:
+
+> What happens when something we see or hear contradicts our mental models? What happens when the procedure we’ ve just written turns out not to do what we wanted? Is programming a model of learning? Do mistakes matter?
+
+Well I have to go now to set up for a New Year's Eve party at our artspace. So this is my last official post for December Adventure 2025. I kind of tapered off at the end there, just doodling around with LOGO, but I had fun and I feel ready to teach with it. I think it will be a fun opening activity workshop in my Drawing, Moving and seeing with Code class, which I'm going to try to teach more like an experimental lab than an instructor-led seminar/studio class.
+
+This month I coded in LOGO, javascript, Lua, Bash, HTML, CSS. I worked on some generative art, on a longterm ddocumentary digital artwork, on a static website generator, on a website for a friend's day-long slow film project, on documentation, and on little tests of LOGO. I didn't get to everything on my list to do, especially music. But I have a couple weeks more off school so will do more music and Pure Data next, and maybe get back to Pico-8 and continuing work on my documentary art project. I still want to try Construct 3 for rapid game-making, so maybe will give that a shot, and get back to my work in Forth. I'd love to make a version of LOGO implemented in my custom FORTH. Anyway, this was good to have a daily practice, and to log my work. I'll continue perhaps to do this kind of studio practice. I need to figure out where I should log about it, like a tinylog, and I probably won't do it every day, but will make it more regular. It's a great way to expand my skills and refine my artwork and craft. And it's fun, and great to look back and see what I've done. Thanks to Eli for starting the December Adventure series, and it was fun to follow along with everyone else this month. Cheers
+
 
 [↑top](#)
