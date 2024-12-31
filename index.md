@@ -313,8 +313,6 @@ I didn't do a ton but tried out building some basic loops and functions.
 
 ![Apple Logo II](assets/img/logo.png)  
 
-<div id="current"></div>
-
 ## Dec 29
 
 Today I hung out with family and friends and barely put time to coding. I have just a few minutes before bed. I played in the browser with Pencil Code, a block-based editor like Scratch. I found that you could use the 'wear' block and type in a random word and most of the time it changes the turtle to that image.  
@@ -345,5 +343,40 @@ for [1..4]
 pen white, 10
 fd 50
 ```
+
+<div id="current"></div>
+
+## Dec 30
+
+Same story as previous days: not much time for coding. I had a train ride though, and decided to work without internet. First, I spent some time reading Turtle Bunting: A LOGO Vexillological Reader.
+
+<iframe src="https://archive.org/embed/peter-carter-turtle-bunting" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+
+Then I decided to keep working on simple quilt algos. I used turtle.lua this time, a simple turtle programming library in Lua with the Love2d framework. Since I already like Lua and Love2d, this seemed the most natural to work in, but then you lose the advantages of Lisp and Logo. The turtle.lua library is a bit clunky. Like Love, I don't like having to call things like a class. I prefer p5-style or original LOGO style of coding. I recreated the quilt but then didn't do much afterwards.
+
+```lua
+--excerpt
+function patch(_x,_y,_length)
+  t:penup():setpos(_x,_y):pendown()
+
+  t:color(love.math.random(255)/255,love.math.random(255)/255,love.math.random(255)/255)
+  for fwd=_length,4,-2 do
+    t:forward(fwd):right(90)
+  end
+end
+```
+
+![A quilt with random color blocks programmed in turtle.lua](assets/img/blquilt.jpg)
+
+
+You see what I mean about it being a little clunky?
+
+It is cleaner (to me) to write more like the following, though I need to check the way to work with parameters.
+
+```logo
+  setpencolor random 16 repeat :length/2 [ fd :fwd rt 90 ]
+```
+
+Today I also found [JSLogo](https://www.calormen.com/jslogo/) (see [code](https://github.com/inexorabletash/jslogo)), which looks useful for a mini 1-off workshop I may teach. 
 
 [↑top](#)

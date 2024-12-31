@@ -1151,9 +1151,6 @@ functions.</p>
 <img src="assets/img/logo.png" alt="Apple Logo II" />
 <figcaption aria-hidden="true">Apple Logo II</figcaption>
 </figure>
-<div id="current">
-
-</div>
 <h2 id="dec-29">Dec 29</h2>
 <p>Today I hung out with family and friends and barely put time to
 coding. I have just a few minutes before bed. I played in the browser
@@ -1191,6 +1188,47 @@ for [1..4]
   bk 50
 pen white, 10
 fd 50</code></pre>
+<div id="current">
+
+</div>
+<h2 id="dec-30">Dec 30</h2>
+<p>Same story as previous days: not much time for coding. I had a train
+ride though, and decided to work without internet. First, I spent some
+time reading Turtle Bunting: A LOGO Vexillological Reader.</p>
+<iframe src="https://archive.org/embed/peter-carter-turtle-bunting" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen>
+</iframe>
+<p>Then I decided to keep working on simple quilt algos. I used
+turtle.lua this time, a simple turtle programming library in Lua with
+the Love2d framework. Since I already like Lua and Love2d, this seemed
+the most natural to work in, but then you lose the advantages of Lisp
+and Logo. The turtle.lua library is a bit clunky. Like Love, I don’t
+like having to call things like a class. I prefer p5-style or original
+LOGO style of coding. I recreated the quilt but then didn’t do much
+afterwards.</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode lua"><code class="sourceCode lua"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">--excerpt</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> patch<span class="op">(</span><span class="va">_x</span><span class="op">,</span><span class="va">_y</span><span class="op">,</span><span class="va">_length</span><span class="op">)</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="va">t</span><span class="op">:</span>penup<span class="op">():</span>setpos<span class="op">(</span><span class="va">_x</span><span class="op">,</span><span class="va">_y</span><span class="op">):</span>pendown<span class="op">()</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="va">t</span><span class="op">:</span>color<span class="op">(</span><span class="va">love</span><span class="op">.</span><span class="va">math</span><span class="op">.</span>random<span class="op">(</span><span class="dv">255</span><span class="op">)/</span><span class="dv">255</span><span class="op">,</span><span class="va">love</span><span class="op">.</span><span class="va">math</span><span class="op">.</span>random<span class="op">(</span><span class="dv">255</span><span class="op">)/</span><span class="dv">255</span><span class="op">,</span><span class="va">love</span><span class="op">.</span><span class="va">math</span><span class="op">.</span>random<span class="op">(</span><span class="dv">255</span><span class="op">)/</span><span class="dv">255</span><span class="op">)</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> <span class="va">fwd</span><span class="op">=</span><span class="va">_length</span><span class="op">,</span><span class="dv">4</span><span class="op">,-</span><span class="dv">2</span> <span class="cf">do</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="va">t</span><span class="op">:</span>forward<span class="op">(</span><span class="va">fwd</span><span class="op">):</span>right<span class="op">(</span><span class="dv">90</span><span class="op">)</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">end</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span></code></pre></div>
+<figure>
+<img src="assets/img/blquilt.jpg"
+alt="A quilt with random color blocks programmed in turtle.lua" />
+<figcaption aria-hidden="true">A quilt with random color blocks
+programmed in turtle.lua</figcaption>
+</figure>
+<p>You see what I mean about it being a little clunky?</p>
+<p>It is cleaner (to me) to write more like the following, though I need
+to check the way to work with parameters.</p>
+<pre class="logo"><code>  setpencolor random 16 repeat :length/2 [ fd :fwd rt 90 ]</code></pre>
+<p>Today I also found <a
+href="https://www.calormen.com/jslogo/">JSLogo</a> (see <a
+href="https://github.com/inexorabletash/jslogo">code</a>), which looks
+useful for a mini 1-off workshop I may teach.</p>
 <p><a href="#">↑top</a></p>
 </body>
 </html>
